@@ -1,0 +1,8 @@
+- Buy stocks
+  - quantity and price
+  - Market Order
+    - Buy at market price
+  - Limit Order
+    - Buy at fixed price that I want to buy at
+- Sell Stocks
+  - quantity and price

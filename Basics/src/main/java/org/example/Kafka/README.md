@@ -1,0 +1,1 @@
+Design and implement a high-performance, in-memory publish-subscribe messaging system for a distributed application. Your system should support multiple producers publishing messages to topics and multiple consumers subscribing to these topics with various consumption patterns.

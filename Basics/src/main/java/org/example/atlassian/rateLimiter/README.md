@@ -1,0 +1,4 @@
+- Atlassian often asks about designing a rate limiter, which was the case for me as well (x requests in y time). I proposed a moving window approach, but I was removing all requests from the queue within the time window. The interviewer suggested processing only one request, reducing the time complexity from O(windowLength) to O(1). The interview went well, and the interviewer was very friendly. We finished a bit early and talked about common hobbies, etc.
+    - Design a rate limiter where each user can perform max of X requests in Y seconds Scale up to include credit system for that user per unused requests How would you handle this in a multithreaded env
+    - Rate limiter (Token bucket) Was asked to implement any one strategy
+- 
