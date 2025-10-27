@@ -91,7 +91,7 @@ class TotalExpenseRule implements Rule{
 
     @Override
     public boolean violateRule(Expense expense) {
-        return expense.getAmountInUsd() < min && expense.getAmountInUsd() > max;
+        return expense.getAmountInUsd() < min || expense.getAmountInUsd() > max;
     }
 }
 
@@ -114,7 +114,7 @@ class SellerTypeExpenseRule implements Rule{
     @Override
     public boolean violateRule(Expense expense) {
         if(!expense.sellerType.equals(sellerType)) return false;
-        return expense.amountInUsd < minExpense && expense.amountInUsd > maxExpense;
+        return expense.amountInUsd < minExpense || expense.amountInUsd > maxExpense;
     }
 }
 
@@ -136,7 +136,8 @@ class ExpenseTypeRule implements Rule{
 
     @Override
     public boolean violateRule(Expense expense) {
-        if(!expense.expenseType.equals())
+        if(!expense.expenseType.equals(expenseType)) return false;
+        return expense.amountInUsd < minExpense || expense.amountInUsd > maxExpense;
     }
 }
 class ViolationResult{
